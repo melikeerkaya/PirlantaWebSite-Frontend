@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+            <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Pırlanta ürünleri, baget yüzükler, bilezikler ve daha fazlası." />
+    <meta name="author" content="Marka Adı" />
+    <title>Rimberio</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/img/Adsız tasarım (2).png" />
+    <!-- CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap icon s-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+</head>
+<body> 
+ <!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" id="mainNav">
+  <div class="container">
+   
+    <!-- Marka/Logo -->
+    <a class="navbar-brand" href="Anasayfa.html">
+     <img src="assets/img//Adsız tasarım (2).png" height="80" width="150" style="padding-left: 10px;" >
+
+    </a>
+   
+
+    <!-- Hamburger (lg altı gösterilecek) -->
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+       
+    <!-- Açılıp kapanan nav içerikleri -->
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto text-uppercase">
+        <li class="nav-item">
+        <a class="nav-link" href="sepet.html">
+         <i class="bi bi-bag"></i> Sepet (<span id="cartCount">0</span>)
+         </a>
+         </li>
+           <!-- Giriş linki (başta görünür) -->
+          <li class="nav-item" id="loginLink">
+            <a class="nav-link" href="login.html" title="Giriş Yap">
+            <i class="bi bi-person"></i> Giriş
+            </a>
+          </li>
+
+    <!-- Hesabım menüsü (başta gizli) -->
+      <li class="nav-item dropdown d-none" id="accountMenu">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+         <i class="bi bi-person-check"></i> <span id="accountName">Hesabım</span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end">
+       <li><a class="dropdown-item" href="#">Siparişlerim</a></li>
+        <li><a class="dropdown-item" href="#">Hesap Ayarları</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item text-danger" href="#" id="logoutBtn">Çıkış Yap</a></li>
+       </ul>
+      </li>
+          
+        <!-- Dropdown örneği -->
+        <li class="nav-item dropdown">
+          <a class="nav-link " href="BagetPirlantalar.html" id="DropdownPirlanta"
+             role="button"  aria-expanded="false">
+            Baget Pırlantalar
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end p-3" aria-labelledby="DropdownPirlanta">
+            <li>
+              <a class="dropdown-item text-center" href="BagetYuzukler.html">
+                <img src="assets/img/altinbas-altin-baget-yuzukler-0011156430054-1636440098.webp" alt="Baget Yüzük" width="60" height="60" class="d-block mx-auto">
+                <span class="d-block mt-2">Baget Yüzükler</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item text-center" href="BagetKolyeler.html">
+                <img src="assets/img/bagetkolye.jpg" alt="Baget Saat" width="60" height="60" class="d-block mx-auto">
+                <span class="d-block mt-2">Baget Kolyeler</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item text-center" href="BagetKupeler.html">
+                <img src="assets/img/bagetkupe.jpg" alt="Baget Saat" width="60" height="60" class="d-block mx-auto">
+                <span class="d-block mt-2">Baget Küpeler</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item text-center" href="BagetBileklikler.html">
+                <img src="assets/img/bagetkolye.jpg" alt="Baget Saat" width="60" height="60" class="d-block mx-auto">
+                <span class="d-block mt-2">Baget Bileklikler</span>
+              </a>
+            </li>
+            <!-- Daha fazla öğe ekleyebilirsin -->
+          </ul>
+        </li>
+        
+        <!-- Dropdown örneği -2 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="PirlantaYuzukler.html" id="DropdownYuzuk"
+             role="button"  aria-expanded="false">
+            Pırlanta Yüzükler
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end p-3" aria-labelledby="DropdownYuzuk">
+            <li>
+              <a class="dropdown-item text-center" href="TektasYuzukler.html">
+                <img src="assets/img/tektas.jpg" width="60" height="60" class="d-block mx-auto">
+                <span class="d-block mt-2">Tektaş Yüzükler</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item text-center" href="BestasYuzukler.html">
+                <img src="assets/img/bestas.jpg"  width="60" height="60" class="d-block mx-auto">
+                <span class="d-block mt-2">Beştaş Yüzükler</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item text-center" href="TamturYuzuker.html">
+                <img src="assets/img/tamtur.jpg"  width="60" height="60" class="d-block mx-auto">
+                <span class="d-block mt-2">Tamtur Yüzükler</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item text-center" href="YakutYuzuk.html">
+                <img src="assets/img/yakut.jpg" width="60" height="60" class="d-block mx-auto">
+                <span class="d-block mt-2">Yakut Yüzükler</span>
+              </a>
+            </li>
+             <li>
+              <a class="dropdown-item text-center" href="ZumrutYzukler.html">
+                <img src="assets/img/zumrut.jpg" width="60" height="60" class="d-block mx-auto">
+                <span class="d-block mt-2">zümrüt Yüzükler</span>
+              </a>
+            </li>
+            <!-- Daha fazla öğe ekleyebilirsin -->
+          </ul>
+        </li>
+      <!-- Dropdown örneği -3 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link " href="PirlantaKolyeler.html" id="Dropdownkolye"
+             role="button" aria-expanded="false">
+            Pırlanta Kolyeler
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end p-3" aria-labelledby="Dropdownkolye">
+            <li>
+              <a class="dropdown-item text-center" href="Gerdanliklar.html">
+                <img src="assets/img/Gerdanlık.jpg" width="60" height="60" class="d-block mx-auto">
+                <span class="d-block mt-2">Gerdanlıklar</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item text-center" href="HarfliKolyeler.html">
+                <img src="assets/img/harflıkolye.jpg"  width="60" height="60" class="d-block mx-auto">
+                <span class="d-block mt-2">Harfli Kolyeler</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item text-center" href="Gumuscelikkolyeler.html">
+                <img src="assets/img/celik.jpeg"  width="60" height="60" class="d-block mx-auto">
+                <span class="d-block mt-2"> Gümüş ve çelik kolyeler</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+</nav>
+<br>
+<br>
+<br>
+<br>
+<section class="py-5">
+  <div class="container d-flex justify-content-center align-items-center"
+       style="background-color: #f8f9fa; height: 15vh; margin-top: 5rem;">
+    <h1 class="mb-0">Baget Küpeler</h1>
+  </div>
+</section>
+
+<div class="container px-4 px-lg-5 mt-5">
+  <h2 class="text-center mb-5">
+    <a href="#" style="color:black;text-decoration:underline">Çok Yakında Ürünlerimiz Sizlerle Olacaktır. </a>
+  </h2>
+
+  <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center" id="bagetkupeGrid">
+    <!-- Ürün kartları buraya otomatik gelecek -->
+  </div>
+</div>
+
+<!--Reklam Banner-->
+         <div class="promo-banner mb-5" style="background-image: url('assets/img/Banner12.jpeg');">
+  
+        </div>
+<!--Reklam Banner-->
+
+
+
+</body>
+</html>
+</section> 
+
+
+
+<!-- Footer-->
+ <footer class=" text-dark  pt-5" style="background-color: #8d8a8a;">
+  <div class="container">
+    <div class="row">
+
+      <!-- Marka ve Sosyal Medya -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <h5>Rimberio Pırlanta</h5>
+        <p>Şıklığın ve zarafetin adresi.</p>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-dark"><i class="fab fa-facebook fs-5"></i></a>
+          <a href="#" class="text-dark"><i class="fab fa-instagram fs-5"></i></a>
+          <a href="#" class="text-dark"><i class="fab fa-twitter fs-5"></i></a>
+          <a href="#" class="text-dark"><i class="fab fa-youtube fs-5"></i></a>
+        </div>
+      </div>
+
+      <!-- Kurumsal Bilgiler -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <h6>Kurumsal</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-dark">Altınlık Kurumsal</a></li>
+          <li><a href="#" class="text-dark">Pırlanta Rehberi</a></li>
+          <li><a href="#" class="text-dark">Kampanyalar</a></li>
+          <li><a href="#" class="text-dark">Mağazalar</a></li>
+          <li><a href="#" class="text-dark">İletişim</a></li>
+        </ul>
+      </div>
+
+      <!-- Sözleşmeler -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <h6>Sözleşmeler</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-dark">Mesafeli Satış Sözleşmesi</a></li>
+          <li><a href="#" class="text-dark">CIMAC Bilgileri</a></li>
+          <li><a href="#" class="text-dark">Aydınlatma Metni</a></li>
+        </ul>
+      </div>
+
+      <!-- Politikalar -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <h6>Politikalar</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-dark">Kullanım Şartları</a></li>
+          <li><a href="#" class="text-dark">Gizlilik Politikası</a></li>
+          <li><a href="#" class="text-dark">Güvenlik Politikası</a></li>
+          <li><a href="#" class="text-dark">Çerez Politikası</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Kart Logoları ve Alt Bilgi -->
+    <div class="border-top pt-4 mt-4 d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="mb-3 mb-md-0 d-flex gap-3">
+        <img src="assets/img/Visa.png" alt="Visa" width="50">
+        <img src="assets/img/MasterCard.png" alt="MasterCard" width="50">
+        <img src="assets/img/AmericanExpress.png" alt="Amex" width="50">
+        <img src="assets/img/Troy.png" alt="Troy" width="50">
+      </div>
+      <p class="mb-0 small">© 2025 Rimberio Pırlanta Tüm Hakları Saklıdır.</p>
+    </div>
+  </div>
+</footer>
+<!-- Footer-->
+
+
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- config.js önce -->
+<script src="js/config.js"></script>
+
+<!-- authStatus.js sonra -->
+
+
+<!-- diğer js dosyaları en sona -->
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>
