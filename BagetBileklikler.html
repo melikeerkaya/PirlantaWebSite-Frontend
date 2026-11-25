@@ -27,7 +27,7 @@
    
     <!-- Marka/Logo -->
     <a class="navbar-brand" href="Anasayfa.html">
-     <img src="assets/img//Adsız tasarım (2).png" height="80" width="150" style="padding-left: 10px;" >
+     <img src="assets/img/Adsız tasarım (2).png" height="80" width="150" style="padding-left: 10px;" >
 
     </a>
    
@@ -46,13 +46,13 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ms-auto text-uppercase">
         <li class="nav-item">
-        <a class="nav-link" href="sepet.html">
+        <a class="nav-link" href="Sepet.html">
          <i class="bi bi-bag"></i> Sepet (<span id="cartCount">0</span>)
          </a>
          </li>
            <!-- Giriş linki (başta görünür) -->
           <li class="nav-item" id="loginLink">
-            <a class="nav-link" href="login.html" title="Giriş Yap">
+            <a class="nav-link" href="Login.html" title="Giriş Yap">
             <i class="bi bi-person"></i> Giriş
             </a>
           </li>
@@ -282,7 +282,7 @@
 </footer>
 <!-- Footer-->
  <script>
-const API_BASE = "http://localhost:5000";
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const token = localStorage.getItem("token");
@@ -293,7 +293,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Giriş yapılmış mı kontrol et
   if (token) {
-    fetch(`${API_BASE}/api/auth/me`, {
+    fetch(`${window.API_BASE}/auth/me`, {
       headers: { Authorization: `Bearer ${token}` }
     })
     .then(res => res.json())

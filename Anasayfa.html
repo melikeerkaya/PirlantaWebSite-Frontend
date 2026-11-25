@@ -29,7 +29,7 @@
    
     <!-- Marka/Logo -->
     <a class="navbar-brand" href="Anasayfa.html">
-     <img src="assets/img//Adsız tasarım (2).png" height="80" width="150" style="padding-left: 10px;" >
+     <img src="assets/img/Adsız tasarım (2).png" height="80" width="150" style="padding-left: 10px;" >
 
     </a>
    
@@ -48,12 +48,12 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ms-auto text-uppercase">
         <li class="nav-item">
-        <a class="nav-link" href="sepet.html">
+        <a class="nav-link" href="Sepet.html">
          <i class="bi bi-bag"></i> Sepet (<span id="cartCount">0</span>)
          </a>
          </li>
           <li class="nav-item" id="loginLink">
-  <a class="nav-link" href="login.html">
+  <a class="nav-link" href="Login.html">
     <i class="bi bi-person"></i> Giriş
   </a>
           
@@ -450,7 +450,7 @@
     const token = getToken();
     if(!token) return null;
     try{
-     const res = await fetch(`${API_URL}/auth/me`, {
+     const res = await fetch(`${window.API_BASE}/auth/me`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       if(!res.ok) throw new Error();
@@ -477,7 +477,7 @@
       logoutBtn?.addEventListener("click", (e)=>{
         e.preventDefault();
         clearToken();
-        window.location.href = "anasayfa.html";
+        window.location.href = "Anasayfa.html";
       });
     }else{
       loginLink?.classList.remove("d-none");
@@ -504,7 +504,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   try {
-    const res = await fetch("http://localhost:5000/api/auth/me", {
+    const res = await fetch(`${window.API_BASE}/auth/me`, {
       headers: { Authorization: `Bearer ${token}` },
     });
 
